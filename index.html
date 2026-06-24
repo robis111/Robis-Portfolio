@@ -125,6 +125,15 @@ overflow:hidden;
 border: 3px solid #38bdf8;
 }
 
+/* FIX: Photo ko upar se focus karne ke liye styling change ki hai */
+.profile img {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+object-fit: cover;
+object-position: top center; /* Isse chehra niche nahi dabega aur poora dikhega */
+}
+
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
@@ -241,7 +250,7 @@ Data Analyst | Business Intelligence | SQL | Power BI | Python
 <h2 class="section-title">About Me</h2>
 <div class="about">
 <div class="profile">
-<img src="Profile.png.jpg" alt="Robis Khan" style="width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:top center;">
+<img src="Profile.png.jpg" alt="Robis Khan">
 </div>
 <div>
 <p>
